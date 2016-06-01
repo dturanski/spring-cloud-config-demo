@@ -1,3 +1,6 @@
+# Edit this as appropriate
+project.home: ${user.home}/dev/spring-cloud-config-demo
+
 spring:
    config:
        name: configserver
@@ -5,8 +8,12 @@ spring:
        config:
            server:
                git:
-                  uri: https://github.com/dturanski/config-repo
-#               overrides:
-#                  info.foo: bar
+                  uri: file://${project.home}/config-repo
+
 server:
    port: 8888
+logging:
+  level:
+    org.springframework.cloud: DEBUG
+    org.springframework.context: DEBUG
+    org.springframework.web: DEBUG

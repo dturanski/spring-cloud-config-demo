@@ -14,17 +14,5 @@ public class ConfigServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConfigServerApplication.class, args);
     }
-
-//    @Bean
-//    PropertyPathNotificationExtractor propertyPathNotificationExtractor() {
-//        return new PropertyPathNotificationExtractor() {
-//            @Override public PropertyPathNotification extract(
-//                    MultiValueMap<String, String> headers, Map<String, Object> payload) {
-//                logger.info(headers.toString());
-//                logger.info(payload.toString());
-//                return null;
-//            }
-//        };
-//    }
 }
 

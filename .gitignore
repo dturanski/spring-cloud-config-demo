@@ -11,7 +11,10 @@ build
 bin
 target/
 _site/
+.DS_Store
 *.swp
 .idea
 *.iml
+*.ipr
+*.iws
 .factorypath
