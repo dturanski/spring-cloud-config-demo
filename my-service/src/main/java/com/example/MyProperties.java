@@ -30,4 +30,9 @@ public class MyProperties {
 	public String getPrefix() {
 		return MyProperties.prefix;
 	}
+
+	public String toString() {
+		return String.format("{\"prefix\": \"%s\", \"foo\": \"%s\", \"bar\": \"%s\"}",
+				prefix, foo, bar);
+	}
 }

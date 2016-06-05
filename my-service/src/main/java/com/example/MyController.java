@@ -27,11 +27,15 @@ public class MyController {
 	@Value("${info.foo}")
 	String value;
 
+	@Value("${my.password}")
+	String password;
+
 	@RequestMapping("/")
 	@ResponseBody
 	public Response respond() {
-		logger.debug("@ConfigurationProperties: {} @Value: {}",
-				properties, value);
+		logger.debug("@ConfigurationProperties: {} @Value: {}", properties, value);
+		//Generally not a great idea...
+		logger.debug("password: {}", password);
 		return new Response(properties, value);
 	}
 }

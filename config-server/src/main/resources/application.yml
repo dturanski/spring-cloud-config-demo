@@ -10,10 +10,10 @@ spring:
                   uri: https://github.com/dturanski/config-repo
 #                 uri: file://${project.home}/config-repo
 
+#
+# Recommend using an environment variable `ENCRYPT_KEY` in production
+#
+encrypt.key: secretKey
+
 server:
    port: 8888
-logging:
-  level:
-    org.springframework.cloud: DEBUG
-    org.springframework.context: DEBUG
-    org.springframework.web: DEBUG
