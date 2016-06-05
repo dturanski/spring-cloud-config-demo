@@ -8,7 +8,7 @@ spring:
            server:
                git:
                   uri: https://github.com/dturanski/config-repo
-#                  uri: file://${project.home}/config-repo
+#                 uri: file://${project.home}/config-repo
 
 server:
    port: 8888

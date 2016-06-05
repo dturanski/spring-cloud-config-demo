@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 @EnableConfigurationProperties(MyProperties.class)
+// Uncomment @RefreshScope to enable refreshes to this class
 @RefreshScope
 public class MyController {
 

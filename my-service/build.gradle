@@ -33,17 +33,15 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven {
-        url 'http://repo.spring.io/milestone'
+        url 'http://repo.spring.io/release'
     }
 }
 dependencies {
 
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    // end::actuator[]
     testCompile("org.springframework.boot:spring-boot-starter-test")
-    compile('org.springframework.cloud:spring-cloud-bus:1.1.0.BUILD-SNAPSHOT')
-    compile('org.springframework.cloud:spring-cloud-starter-bus-amqp:1.1.0.BUILD-SNAPSHOT')
+    compile('org.springframework.cloud:spring-cloud-starter-bus-amqp')
     compile('org.springframework.cloud:spring-cloud-starter-config')
     compile("org.springframework.boot:spring-boot-devtools")
 }
