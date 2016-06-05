@@ -12,6 +12,7 @@ To demonstrate spring-cloud-bus, start a local Rabbit MQ sever.
 * Navigate to (http://localhost:8080)
 
 Change property values to single application (config-bus not required)
+===
 
 *  `curl -X POST http://localhost:8080/env -d info.foo=zoob -d info.bar=bobo`
 *  If [MyController](./my-service/src/main/java/com/example/MyController.java) has @RefreshScope, `curl -X POST http://localhost:8080/refresh` is required to update the `value` field.
