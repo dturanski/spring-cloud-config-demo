@@ -1,6 +1,5 @@
 # Edit this as appropriate
-project.home: ${user.home}/dev/spring-cloud-config-demo
-
+#project.home: ${user.home}/dev
 spring:
    config:
        name: configserver
@@ -8,7 +7,8 @@ spring:
        config:
            server:
                git:
-                  uri: file://${project.home}/config-repo
+                  uri: https://github.com/dturanski/config-repo
+#                  uri: file://${project.home}/config-repo
 
 server:
    port: 8888
