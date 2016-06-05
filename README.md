@@ -9,7 +9,7 @@ To demonstrate spring-cloud-bus, start a local Rabbit MQ sever.
 
 * Start config-server
 * Start my-service
-* Navigate to (http://localhost:8080)
+* Navigate to http://localhost:8080
 
 ### Change property values to single application (config-bus not required)
 
