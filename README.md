@@ -18,14 +18,20 @@ NOTE: The config repo is https://github.com/dturanski/config-repo . To modify pr
 
 ### Changing logging levels at run time
 * `curl -X POST http://localhost:8080/env -d logging.level.com.example=DEBUG`
+* `curl http://localhost:8080` and check the app console for log messages
 
 
 ### Change property values to all config clients via config-bus
 
 NOTE: To demonstrate spring-cloud-bus, start a local Rabbit MQ sever.
 
-* Update values in config repo and `curl -X POST http://localhost:8888/bus/refresh
+* Update values in config repo and `curl -X POST http://localhost:8888/bus/refresh`
 * `curl -X POST http://localhost:8888/bus/env -d logging.level.com.example=DEBUG`
+
+### Push Notification using Github webhooks
+
+* Start ngrok tunnel or deploy your app to a public URL
+
 
 
 
