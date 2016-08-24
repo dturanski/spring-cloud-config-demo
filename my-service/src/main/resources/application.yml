@@ -1,5 +1,15 @@
+my:
+   password: pass
 info:
    bar: boot
+   foo: baz
+    
+security:
+  basic:
+    enabled: false
 
+management:
+  security:
+    enabled: false   
 
 
